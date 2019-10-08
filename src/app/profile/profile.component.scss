@@ -1,0 +1,56 @@
+$text-color-prm: rgb(49, 49, 49);
+
+.container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: $text-color-prm;
+  }
+  h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+    color: $text-color-prm;
+  }
+}
+
+.icons {
+  text-align: center;
+  margin-top: 25px;
+  a {
+    color: $text-color-prm;
+    margin-right: 5px;
+  }
+}
+
+.buttons {
+  margin-top: 25px;
+  button {
+    margin-right: 15px;
+  }
+}
+
+.fields {
+  display: flex;
+  flex-direction: row;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    margin-right: 25px;
+    li {
+      margin-bottom: 5px;
+      color: $text-color-prm;
+    }
+  }
+}
