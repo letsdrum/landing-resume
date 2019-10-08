@@ -1,0 +1,42 @@
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  h2{
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+}
+
+.lang-skills {
+  width: 48%;
+}
+
+.tech-skills {
+  width: 48%;
+}
+
+.other-skills{
+    width: 100%;
+}
+
+.skills {
+  background-color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.center{
+    text-align: center;
+    p{
+        margin: 0;
+    }
+}
+
+mat-slider {
+  width: 90%;
+}

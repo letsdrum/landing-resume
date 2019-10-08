@@ -1,1 +1,55 @@
-<p>skills works!</p>
+<div class="container">
+    <div class="lang-skills">
+        <h2>Language skills</h2>
+        <div [class.mat-elevation-z2]="!isActive" class="skills">
+            <div class="center">
+                <p>C#</p>
+                <mat-slider value="85"></mat-slider>
+                <p>Python</p>
+                <mat-slider value="55" color="primary"></mat-slider>
+                <p>HTML5</p>
+                <mat-slider value="90" color="warn"></mat-slider>
+                <p>CSS3</p>
+                <mat-slider value="80"></mat-slider>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-skills">
+        <h2>Technologies skills</h2>
+        <div [class.mat-elevation-z2]="!isActive" class="skills">
+            <div class="center">
+                <p>WPF</p>
+                <mat-slider value="55"></mat-slider>
+                <p>WebAPI</p>
+                <mat-slider value="45" color="primary"></mat-slider>
+                <p>MS SQL Server</p>
+                <mat-slider value="48" color="warn"></mat-slider>
+                <p>MongoDB</p>
+                <mat-slider value="42"></mat-slider>
+            </div>
+        </div>
+    </div>
+
+    <div class="other-skills">
+        <h2>Other skills</h2>
+        <div [class.mat-elevation-z2]="!isActive" class="skills">
+            <div class="center">
+                <p>Entity Framework</p>
+                <mat-slider value="65"></mat-slider>
+                <p>Html Agility Pack</p>
+                <mat-slider value="85" color="primary"></mat-slider>
+                <p>Json.NET</p>
+                <mat-slider value="67" color="warn"></mat-slider>
+                <p>MVC</p>
+                <mat-slider value="55"></mat-slider>
+                <p>MVP</p>
+                <mat-slider value="85" color="primary"></mat-slider>
+                <p>MVVM</p>
+                <mat-slider value="62" color="warn"></mat-slider>
+                <p>REST</p>
+                <mat-slider value="53"></mat-slider>
+            </div>
+        </div>
+    </div>
+</div>
