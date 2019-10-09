@@ -1,4 +1,4 @@
-$text-color-prm: rgb(49, 49, 49);
+$text-color-prm: #212529;
 
 .container {
   width: 50%;
@@ -15,12 +15,13 @@ $text-color-prm: rgb(49, 49, 49);
     font-size: 24px;
     margin-bottom: 10px;
     color: $text-color-prm;
+    font-weight: normal;
   }
   h4 {
     margin: 0;
     font-size: 15px;
     font-weight: normal;
-    color: $text-color-prm;
+    color: #8c9090;
   }
 }
 
@@ -28,7 +29,7 @@ $text-color-prm: rgb(49, 49, 49);
   text-align: center;
   margin-top: 25px;
   a {
-    color: $text-color-prm;
+    color: #8c9090;
     margin-right: 5px;
   }
 }

@@ -5,6 +5,7 @@
   h2 {
     margin-top: 50px;
     margin-bottom: 50px;
+    font-weight: normal;
   }
 }
 
@@ -14,10 +15,16 @@
   justify-content: space-between;
 
   div {
-      width: 19%;
-      background-color: white;
-      padding-top: 30px;
-      padding-bottom: 20px;
-      text-align: center;
+    width: 19%;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    i{
+      color: #f8ce23;
+    }
+    h4 {
+      font-weight: normal;
+    }
   }
 }
