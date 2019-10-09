@@ -8,6 +8,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: white;
+  z-index: 1000;
 }
 
 .background{
@@ -35,5 +36,3 @@ ul {
   margin-top: -270px;
 }
 
-.skills{
-}
