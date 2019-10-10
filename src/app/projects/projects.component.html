@@ -1,18 +1,31 @@
 <div class="container">
     <h2>Projects</h2>
     <div class="container-flex">
-        <div>
+        <div *ngFor="let repo of repos">
             <mat-card class="example-card">
                 <mat-card-header>
-                    <mat-card-title>blockchainFrontend</mat-card-title>
-                    <mat-card-subtitle>WebApp for DChain</mat-card-subtitle>
+                    <form action="{{repo.html_url}}">
+                        <button mat-icon-button><i class="fab fa-github fa-2x"></i></button>
+                    </form>
+                    <div>
+                        <mat-card-title>{{repo.name}}</mat-card-title>
+                        <mat-card-subtitle>{{repo.description}}</mat-card-subtitle>
+                    </div>
                 </mat-card-header>
-                <mat-card-content>
-                    <i id="i-green" class="fas fa-comment-alt fa-lg"><span>133</span></i>
-                    <i id="i-yellow" class="fas fa-code-branch fa-lg"><span>2</span></i>
-                    <i id="i-red" class="fas fa-exclamation-circle fa-lg"><span>1</span></i>
-                </mat-card-content>
             </mat-card>
+
+            <!-- DD
+            <div class="card">
+                <form action="{{repo.html_url}}">
+                    <button mat-icon-button><i class="fab fa-github fa-2x"></i></button>
+                </form>
+                <div class="header">
+                    <h3>{{repo.name}}</h3>
+                    <p>{{repo.description}}</p>
+                </div>
+
+            </div>
+            -->
         </div>
     </div>
 </div>

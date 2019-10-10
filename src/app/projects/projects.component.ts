@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GitHubRepo } from '../models/model';
+import { GithubService } from '../github.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  repos: GitHubRepo[];
 
-  constructor() { }
+  constructor(private dataService: GithubService) { }
 
   ngOnInit() {
+    return this.dataService.getRepos()
+    .subscribe(reposFromGitHub => this.repos = reposFromGitHub)
   }
 
 }
