@@ -33,3 +33,24 @@
 #i-green {
   color: #00d069;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(156, 156, 156);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
