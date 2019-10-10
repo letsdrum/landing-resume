@@ -3,29 +3,14 @@
     <div class="container-flex">
         <div *ngFor="let repo of repos">
             <mat-card class="example-card">
-                <mat-card-header>
-                    <form action="{{repo.html_url}}">
-                        <button mat-icon-button><i class="fab fa-github fa-2x"></i></button>
-                    </form>
-                    <div>
-                        <mat-card-title>{{repo.name}}</mat-card-title>
-                        <mat-card-subtitle>{{repo.description}}</mat-card-subtitle>
-                    </div>
-                </mat-card-header>
-            </mat-card>
-
-            <!-- DD
-            <div class="card">
                 <form action="{{repo.html_url}}">
                     <button mat-icon-button><i class="fab fa-github fa-2x"></i></button>
                 </form>
-                <div class="header">
-                    <h3>{{repo.name}}</h3>
-                    <p>{{repo.description}}</p>
+                <div>
+                    <mat-card-title>{{repo.name}}</mat-card-title>
+                    <mat-card-subtitle>{{repo.description}}</mat-card-subtitle>
                 </div>
-
-            </div>
-            -->
+            </mat-card>
         </div>
     </div>
 </div>
