@@ -1,23 +1,25 @@
 <div class="container">
     <h2>Contact</h2>
-    <div [class.mat-elevation-z2]="!isActive"  class="content">
+    <div [class.mat-elevation-z2]="!isActive" class="content">
         <div class="container-flex">
             <h3>Hey, happy to hear from you...</h3>
-            <mat-form-field>
-                <input matInput placeholder="Name*">
-            </mat-form-field>
+            <form action="https://formspree.io/letsdrumm@gmail.com" method="POST">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Your name" name="name">
+                </mat-form-field>
 
-            <mat-form-field>
-                <input matInput placeholder="Email*">
-            </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="email" placeholder="Your email" name="_replyto">
+                </mat-form-field>
 
-            <mat-form-field>
-                <textarea matInput placeholder="Message*"></textarea>
-            </mat-form-field>
+                <mat-form-field>
+                    <textarea matInput name="message" placeholder="Your message"></textarea>
+                </mat-form-field>
 
-            <div>
-                <button mat-raised-button color="primary">CONTACT</button>
-            </div>
+                <div>
+                    <button mat-raised-button type="submit" color="primary">CONTACT</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
