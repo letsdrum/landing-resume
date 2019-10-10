@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  download(): void {
+    window.open('assets/resume/Verbin Sergey.docx')
+  }
   constructor() { }
 
   ngOnInit() {
