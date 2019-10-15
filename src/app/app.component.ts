@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  isActive = false;
   currentSection = 'section1';
 
   onSectionChange(sectionId: string) {

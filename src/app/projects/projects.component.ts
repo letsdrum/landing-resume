@@ -9,7 +9,7 @@ import { GithubService } from '../github.service';
 })
 export class ProjectsComponent implements OnInit {
   repos: GitHubRepo[];
-
+  isActive = false;
   constructor(private dataService: GithubService) { }
 
   ngOnInit() {

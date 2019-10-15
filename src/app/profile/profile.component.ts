@@ -10,7 +10,7 @@ import { BottomsheetComponent } from './bottomsheet/bottomsheet.component';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-
+  isActive = false;
   download(): void {
     window.open('assets/resume/Verbin Sergey.docx')
   }

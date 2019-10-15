@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./interests.component.scss']
 })
 export class InterestsComponent implements OnInit {
-
+  isActive = false;
   constructor() { }
 
   ngOnInit() {
