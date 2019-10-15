@@ -16,6 +16,10 @@ import { FooterComponent } from './footer/footer.component';
 import { GithubService } from './github.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ScrollSpyDirective } from './scroll-spy.directive';
+import { DialogContactComponent } from './profile/dialog-contact/dialog-contact.component';
+import { BottomsheetComponent } from './profile/bottomsheet/bottomsheet.component';
+import { MatDialogModule } from '@angular/material';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @NgModule({
   declarations: [
@@ -28,14 +32,19 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
     EducationComponent,
     ContactComponent,
     FooterComponent,
-    ScrollSpyDirective
+    ScrollSpyDirective,
+    DialogContactComponent,
+    BottomsheetComponent
   ],
+  entryComponents: [DialogContactComponent, BottomsheetComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    OverlayModule
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]
