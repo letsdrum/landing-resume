@@ -4,11 +4,16 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  width: 50%;
+  width: 800px;
   display: flex;
   justify-content: center;
   background-color: white;
   z-index: 1000;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .background {
@@ -45,4 +50,70 @@ ul {
 
 .profile {
   margin-top: -270px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  header {
+    position: absolute;
+    z-index: 1500;
+    width: 100%;
+    div {
+      margin: 5px;
+    }
+    li {
+      margin: 5px;
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .profile{
+    margin-top: -455px;
+  }
+  header{
+    display: none;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
 }

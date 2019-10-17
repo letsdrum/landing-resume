@@ -1,7 +1,10 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 800px;
   h2 {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -12,6 +15,7 @@
 .container-flex {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   div {
@@ -20,11 +24,27 @@
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
-    i{
+    i {
       color: #f8ce23;
     }
     h4 {
       font-weight: normal;
     }
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container-flex {
+    flex-direction: column;
+    div {
+      width: 100vw;
+      padding: 0;
+      padding-top: 25px;
+      text-align: center;
+    }
+  }
+  h2 {
+    text-align: center;
   }
 }

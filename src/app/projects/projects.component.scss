@@ -1,7 +1,9 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
 .container {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 800px;
   h2 {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -34,23 +36,16 @@
   color: #00d069;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 2px;
-  height: 3px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(156, 156, 156);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container{
+    width: 100vw;
+    h2{
+      text-align: center;
+    }
+    .example-card{
+      width: 90vw;
+      text-align: center;
+    }
+  }
 }

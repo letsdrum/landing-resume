@@ -68,16 +68,23 @@ h4 {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container{
+    width: 100%;
+  }
   .buttons {
     display: flex;
     justify-content: center;
-    button {
-      margin-right: 15px;
-    }
   }
 
-  .me{
+  .me {
     text-align: center;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  ul{
+    margin: 25px;
   }
 }
 /* Smartphones (landscape) ----------- */

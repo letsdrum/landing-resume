@@ -1,25 +1,27 @@
-<div class="container">
-    <h2>Contact</h2>
-    <div [class.mat-elevation-z2]="!isActive" class="content">
-        <div class="container-flex">
-            <h3>Hey, happy to hear from you...</h3>
-            <form action="https://formspree.io/letsdrumm@gmail.com" method="POST">
-                <mat-form-field>
-                    <input matInput type="text" placeholder="Your name" name="name">
-                </mat-form-field>
+<div class="flex-center">
+    <div class="container">
+        <h2>Contact</h2>
+        <div [class.mat-elevation-z2]="!isActive" class="content">
+            <div class="container-flex">
+                <h3>Hey, happy to hear from you...</h3>
+                <form action="https://formspree.io/letsdrumm@gmail.com" method="POST">
+                    <mat-form-field>
+                        <input matInput type="text" placeholder="Your name" name="name">
+                    </mat-form-field>
 
-                <mat-form-field>
-                    <input matInput type="email" placeholder="Your email" name="_replyto">
-                </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="email" placeholder="Your email" name="_replyto">
+                    </mat-form-field>
 
-                <mat-form-field>
-                    <textarea matInput name="message" placeholder="Your message"></textarea>
-                </mat-form-field>
+                    <mat-form-field>
+                        <textarea matInput name="message" placeholder="Your message"></textarea>
+                    </mat-form-field>
 
-                <div>
-                    <button mat-raised-button type="submit" color="primary">CONTACT</button>
-                </div>
-            </form>
+                    <div class="submit-btn">
+                        <button mat-raised-button type="submit" color="primary">CONTACT</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
