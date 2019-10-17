@@ -4,7 +4,7 @@ Angular CLI ~8.3.5.
 
 ## Started!!!
 
-[Go to check] (https://sergey-v.web.app/)
+[I'm an inline-style link](https://sergey-v.web.app/)
 
 ## Development server
 
