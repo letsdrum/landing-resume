@@ -1,36 +1,39 @@
-<div [class.mat-elevation-z2]="!isActive" class="container">
-    <div class="logo-icons">
-        <img src="assets/img/photo.png" alt="Me">
-
-        <div class="icons">
-            <a href="https://vk.com/ldcore"><i class="fab fa-vk fa-lg"></i></a>
-            <a href="https://telegram.me/sergey_ldcore"><i class="fab fa-telegram-plane fa-lg"></i></a>
-            <a href="https://instagram.com/sergey_ldcore"><i class="fab fa-instagram fa-lg"></i></a>
-            <a href="https://github.com/letsdrum"><i class="fab fa-github fa-lg"></i></a>
+<div class="container-flex">
+    <div [class.mat-elevation-z2]="!isActive" class="container">
+        <div class="logo-icons">
+            <img src="assets/img/photo.png" alt="Me">
+            <div class="icons">
+                <a href="https://vk.com/ldcore"><i class="fab fa-vk fa-lg"></i></a>
+                <a href="https://telegram.me/sergey_ldcore"><i class="fab fa-telegram-plane fa-lg"></i></a>
+                <a href="https://instagram.com/sergey_ldcore"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://github.com/letsdrum"><i class="fab fa-github fa-lg"></i></a>
+            </div>
         </div>
-    </div>
 
-    <div class="information">
-        <h3>Sergey Verbin</h3>
-        <h4>Software Engineer</h4>
+        <div class="information">
+            <div class="me">
+                <h3>Sergey Verbin</h3>
+                <h4>Software Engineer</h4>
+            </div>
 
-        <div class="buttons">
-            <button mat-raised-button color="primary" (click)="bottomOpen()">DONWLOAD</button>
-            <button mat-raised-button color="accent" (click)='contact()'>CONTACT</button>
-        </div>
-        <div class="fields">
-            <ul>
-                <li><strong>Age</strong></li>
-                <li><strong>Address</strong></li>
-                <li><strong>Email</strong></li>
-                <li><strong>Phone</strong></li>
-            </ul>
-            <ul>
-                <li>23</li>
-                <li>Russia, Volgograd, Kazahskaya 16</li>
-                <li>letsdrumm@gmail.com</li>
-                <li>+7 919 982 03 40</li>
-            </ul>
+            <div class="buttons">
+                <button mat-raised-button color="primary" (click)="bottomOpen()">DONWLOAD</button>
+                <button mat-raised-button color="accent" (click)='contact()'>CONTACT</button>
+            </div>
+            <div class="fields">
+                <ul>
+                    <li><strong>Age</strong></li>
+                    <li><strong>Address</strong></li>
+                    <li><strong>Email</strong></li>
+                    <li><strong>Phone</strong></li>
+                </ul>
+                <ul>
+                    <li>23</li>
+                    <li>Russia, Volgograd, Kazahskaya 16</li>
+                    <li>letsdrumm@gmail.com</li>
+                    <li>+7 919 982 03 40</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
