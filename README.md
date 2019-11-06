@@ -1,8 +1,8 @@
-# Resume
+# Landing page
 
 Angular CLI ~8.3.5.
 
-## Started!!!
+## Try it
 
 [Online](https://sergey-v.web.app/)
 
