@@ -1,16 +1,13 @@
-$text-color-prm: #212529;
+@import "~src/app/sass/variables";
 
 .container-flex {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  @extend %container-wrapper;
 }
 
 .container {
-  width: 800px;
+  @extend %flex-row;
+  width: $normal-width;
   background-color: white;
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 35px;
@@ -32,14 +29,14 @@ h4 {
   margin: 0;
   font-size: 15px;
   font-weight: normal;
-  color: #8c9090;
+  color: $text-color-gray;
 }
 
 .icons {
   text-align: center;
   margin-top: 25px;
   a {
-    color: #8c9090;
+    color: $text-color-gray;
     margin-right: 5px;
   }
 }
@@ -52,8 +49,7 @@ h4 {
 }
 
 .fields {
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   ul {
     list-style: none;
     padding: 0;
@@ -66,10 +62,10 @@ h4 {
   }
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones [portrait and landscape] */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .container{
-    width: 100%;
+  .container {
+    width: $full-width;
   }
   .buttons {
     display: flex;
@@ -83,46 +79,7 @@ h4 {
     display: flex;
     justify-content: center;
   }
-  ul{
+  ul {
     margin: 25px;
   }
-}
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */
 }

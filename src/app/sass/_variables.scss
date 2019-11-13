@@ -1,0 +1,33 @@
+@import "~src/app/sass/mixins";
+
+$full-width: 100%;
+$normal-width: 800px;
+
+$text-color-prm: #212529;
+$text-color-gray: #8c9090;
+
+%flex-row {
+  @include flexbox();
+  @include flex-direction(row);
+}
+
+%flex-column {
+  @include flexbox();
+  @include flex-direction(column);
+}
+
+%flex-center {
+  @include flexbox();
+  @include justify-content(center);
+}
+
+%margin-between-block {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+
+%container-wrapper {
+  width: $full-width;
+  @extend %flex-center;
+}

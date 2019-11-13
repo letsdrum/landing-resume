@@ -1,21 +1,18 @@
+@import "~src/app/sass/variables";
+
 .container {
-  width: 800px;
+  width: $normal-width;
   h2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-weight: normal;
+    @extend %margin-between-block;
   }
 }
 
 .flex-center {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  @extend %container-wrapper;
 }
 
 .container-flex {
-  display: flex;
-  flex-direction: row;
+  @extend %container-wrapper;
   justify-content: space-between;
 
   div {
@@ -47,12 +44,12 @@
   color: #5d8afd;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones [portrait and landscape] */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .container-flex {
     flex-direction: column;
     div {
-      width: 100vw;
+      width: $full-width;
       padding: 0;
       text-align: center;
     }

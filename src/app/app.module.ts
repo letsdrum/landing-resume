@@ -10,7 +10,6 @@ import { SkillsComponent } from './skills/skills.component';
 import { WhatIDoingComponent } from './what-i-doing/what-i-doing.component';
 import { InterestsComponent } from './interests/interests.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { GithubService } from './github.service';
@@ -29,7 +28,6 @@ import { OverlayModule } from '@angular/cdk/overlay';
     WhatIDoingComponent,
     InterestsComponent,
     ProjectsComponent,
-    EducationComponent,
     ContactComponent,
     FooterComponent,
     ScrollSpyDirective,
