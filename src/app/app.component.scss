@@ -1,17 +1,17 @@
+@import "~src/app/sass/variables";
+
 header {
+  @extend %flex-center;
   position: fixed;
   margin: auto;
   top: 0;
   left: 0;
   right: 0;
-  width: 800px; //$normal-width
-  display: flex; //%flex-center (@extent)
-  justify-content: center; //%flex-center (@extent)
+  width: $normal-width;
   background-color: white;
   z-index: 1000;
   ul {
-    display: flex; //%flex-row (@extent)
-    flex-direction: row; //%flex-row (@extent)
+    @extend %flex-row;
     flex-wrap: wrap;
   }
 }
@@ -23,8 +23,7 @@ header {
 }
 
 ul {
-  display: flex; //%flex-row (@extent)
-  flex-direction: row; //%flex-row (@extent)
+  @extend %flex-row;
   justify-content: space-between;
   list-style: none;
   padding: 0;
@@ -64,16 +63,16 @@ ul {
     li {
       margin: 5px;
     }
-    ul{
-      display: flex; //%flex-column @extent)
-      flex-direction: column; //%flex-column @extent)
+    ul {
+      display: flex;
+      flex-direction: column;
       text-align: center;
     }
   }
-  .profile{
+  .profile {
     margin-top: -455px;
   }
-  header{
+  header {
     display: none;
   }
 }
